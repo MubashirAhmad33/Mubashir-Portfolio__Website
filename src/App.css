@@ -1,0 +1,13 @@
+:root {
+  --vh: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: var(--vh, 100vh);
+}
