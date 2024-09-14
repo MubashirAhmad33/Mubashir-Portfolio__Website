@@ -6,7 +6,9 @@ import Services from "./components/Services";
 function App() {
   return (
     <div className="">
-      <Navbar />
+      <div className="z-20">
+        <Navbar />
+      </div>
       <HeroSection />
       <Services />
     </div>

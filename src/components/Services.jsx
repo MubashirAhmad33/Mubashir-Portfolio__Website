@@ -1,6 +1,10 @@
+import React, { useState } from "react";
 import Card from "./Card";
+import GitHubModal from "./GitHubModal";
 
 function Services() {
+  const [open, setOpen] = useState("");
+
   const servicesData = [
     {
       image: "./service1.png", // Replace with your image URL
@@ -28,18 +32,19 @@ function Services() {
   return (
     <div className="bg-white p-10 ">
       <div className="text-center">
-        <h1 className="font-bold ">
+        <h1 className="font-semibold ">
           My <span className="text-red-500">Services</span>
         </h1>
-        <p className="md:w-[550px] mx-auto text-[46px] mb-10">
-          Provide Wide Range of Digital Services
+        <p className="mx-auto mb-10 text-lg sm:text-lg md:text-4xl md:w-[500px]">
+          Provide a Wide Range of Digital Services
         </p>
       </div>
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8   max-w-5xl mx-auto ">
         {servicesData.map((service, index) => (
-          <Card key={index} service={service} />
+          <Card key={index} service={service} setOpen={setOpen} />
         ))}
       </div>
+      {open === "githubmodal" && <GitHubModal onClose={() => setOpen("")} />}
     </div>
   );
 }

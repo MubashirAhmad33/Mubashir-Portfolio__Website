@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ service }) => {
+const Card = ({ service, setOpen }) => {
   return (
     <div className=" rounded-lg shadow-2xl flex flex-col gap-5 h-full p-5  hover:bg-red-500 hover:text-white">
       {/* IMAGE */}
@@ -17,10 +17,13 @@ const Card = ({ service }) => {
 
       {/* BUTTON */}
       <div className="mt-auto relative">
-        <button className=" group py-2 px-4 rounded text-blue-500 hover:text-blue-600 transition-colors duration-300">
+        <button
+          className=" group py-2 px-4 rounded text-black hover:text-white transition-colors duration-300"
+          onClick={() => setOpen("githubmodal")}
+        >
           {service.buttonText}
           {/* Left border effect */}
-          <span className="absolute left-0 top-0 h-0 w-1 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+          <span className="absolute left-0 top-0 h-0 w-1 bg-white transition-all duration-300 group-hover:h-full"></span>
         </button>
       </div>
     </div>
