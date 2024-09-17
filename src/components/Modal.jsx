@@ -1,23 +1,3 @@
-// import React from "react";
-
-// const Modal = ({ onClose }) => {
-//   return (
-//     <div className="fixed inset-0 flex justify-center items-center bg-white  ">
-//       <div>
-//         {/* Heading */}
-//         <h1>Hi! </h1>
-//         <p>
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime
-//           ipsam perferendis alias in eum reprehenderit et consequuntur officia
-//           soluta ipsum porro eius perspiciatis quo, odio magnam aut odit vero?
-//         </p>
-//         <button onClick={onClose}>Close me!</button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Modal;
 import React from "react";
 
 const Modal = ({ onClose }) => {
