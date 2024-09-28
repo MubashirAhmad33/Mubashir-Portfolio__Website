@@ -2,23 +2,25 @@ import React from "react";
 
 const Card = ({ service, setOpen }) => {
   return (
-    <div className=" rounded-lg shadow-2xl flex flex-col gap-5 h-full p-5  hover:bg-red-500 hover:text-white">
+    <div className="group rounded-lg shadow-2xl flex flex-col gap-5 h-full p-5 hover:bg-blue-800 hover:text-white">
       {/* IMAGE */}
       <img
         src={service.image}
         alt={service.heading}
-        className={` w-16 h-16 object-contain rounded-md`}
+        className={`w-16 h-16 object-contain rounded-md`}
       />
       {/* HEADER */}
       <h1 className="text-2xl font-semibold">{service.heading}</h1>
 
       {/* DESCRIPTION */}
-      <p className="text-gray-600 flex-grow">{service.description}</p>
+      <p className="text-gray-600 group-hover:text-white flex-grow">
+        {service.description}
+      </p>
 
       {/* BUTTON */}
       <div className="mt-auto relative">
         <button
-          className=" group py-2 px-4 rounded text-black hover:text-white transition-colors duration-300"
+          className="group py-2 px-4 rounded text-black hover:text-white group-hover:text-white transition-colors duration-300"
           onClick={() => setOpen("githubmodal")}
         >
           {service.buttonText}

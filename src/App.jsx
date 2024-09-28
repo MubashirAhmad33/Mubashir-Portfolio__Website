@@ -1,26 +1,30 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
-import Footer from "./components/Footer";
-import ContactUs from "./pages/ContactUs";
-
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import ReviewSection from "./components/Reviews/ReviewSection";
+import ContactForm from "./components/Contact/ContactForm";
+import SatisfiedClientsSection from "./components/SatisfiedClients/SatisfiedClientsSection";
+import Experience from "./components/Experience/Experience";
 function App() {
   return (
-    <Router>
-      <div className="">
-        <Navbar />
-        <div>
-          <Routes>
-            <Route path="/" element={<HeroSection />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<ContactUs />} />
-          </Routes>
-        </div>
-        <Footer />
+    <div className="">
+      <Navbar />
+      <div>
+        <Home />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <ReviewSection />
+        <SatisfiedClientsSection />
+        <ContactForm />
       </div>
-    </Router>
+      <Footer />
+    </div>
   );
 }
 

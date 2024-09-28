@@ -3,22 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      // screens: {
+      //   sm: "320px",
+      //   md: "768px",
+      //   lg: "1024px",
+      //   xl: "1280px",
+      //   "2xl": "1536px",
+      // },
       fontFamily: {
-        sans: [
-          '"Inter var", sans-serif',
-          {
-            fontFeatureSettings: '"cv11", "ss01"',
-            fontVariationSettings: '"opsz" 32',
-          },
-        ],
-      },
-      screens: {
-        xs: "480px", // Extra small devices (phones)
-        sm: "640px", // Small devices (tablets)
-        md: "768px", // Medium devices (small laptops)
-        lg: "1024px", // Large devices (desktops)
-        xl: "1280px", // Extra large devices (large desktops)
-        "2xl": "1536px", // 2X large devices
+        ageo: ["Ageo", "sans-serif"], // Add Ageo font
       },
     },
   },

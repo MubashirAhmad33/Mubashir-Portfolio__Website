@@ -3,7 +3,7 @@ import React from "react";
 const Modal = ({ onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+      <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full mx-4">
         {/* Modal Heading */}
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-semibold mb-4">Profile info!</h1>
@@ -32,12 +32,15 @@ const Modal = ({ onClose }) => {
 
         {/* Modal Content */}
         <h1 className="text-xl mb-2 font-semibold"> it's Mubashir Ahmad</h1>
-        <p className="mb-4 text-justify">
+        <p className="mb-4  ">
           MERN Stack + Full Stack Developer at Alright Tech as well in Alphinex
-          sol, specializing in crafting dynamic web applications. Proficient in
-          MongoDB, Express.js, React.js, and Node.js. Committed to optimizing
-          performance and ensuring scalable code for impactful digital
-          solutions.
+          sol, specializing in crafting dynamic web applications.
+          <span className="text-blue-600   ">
+            Proficient in MongoDB, Express.js, TypeScript,React.js,Node.js and
+            Taliwind CSS
+          </span>
+          . Committed to optimizing performance and ensuring scalable code for
+          impactful digital solutions.
         </p>
         <hr className="p-2" />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GitHubModal = ({ onClose }) => {
   return (
@@ -49,10 +50,26 @@ const GitHubModal = ({ onClose }) => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2">MubashirAhmad33</h2>
 
-          <p className="text-sm text-gray-700">
-            Hi! I am Mubashir Ahmad. I am Working as a React JS Developer at
-            Alright Tech and Nausal Technology and Alphinex with over 2 year of
-            experience in React JS and Next JS as Full Stack developer.
+          <p className="mb-4  ">
+            MERN Stack and Full Stack Developer at Alright Tech as well in
+            Alphinex sol, specializing in crafting dynamic web applications.
+            <span className="text-blue-600  italic ">
+              Proficient in MongoDB, Express.js, TypeScript,React.js,Node.js and
+              Taliwind CSS
+            </span>
+            . Committed to optimizing performance and ensuring scalable code for
+            impactful digital solutions.
+          </p>
+          <p>
+            <span className="font-bold text-lg mr-2">Check Out : </span>
+            <a
+              href="https://github.com/MubashirAhmad33"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="italic"
+            >
+              https://github.com/MubashirAhmad33
+            </a>
           </p>
         </div>
 
